@@ -1,0 +1,21 @@
+{
+  "name": "peter-testes",
+  "description": "Teste com Jasmine + Karma",
+  "main": "index.js",
+  "authors": [
+    "Pedro Fernando"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Peterodactil/Teste-com-Jasmine-Karma",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-mocks": "^1.5.3",
+    "angular": "^1.5.4"
+  }
+}

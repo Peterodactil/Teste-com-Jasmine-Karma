@@ -28,3 +28,16 @@ describe('BlocoTeste1', function() {
     expect(t).toEqual(valorEsperado);
   });
 });
+
+describe('TesteControllerSpec', function() {
+    beforeEach(module('app'));
+    var ctrl;
+    beforeEach(inject(function($controller) {
+      ctrl = $controller('TesteController')
+    }));
+
+    it('Teste Soma', function() {
+      var resultado = ctrl.Soma(1, 1);
+      expect(resultado).toEqual(2);
+    });
+})
