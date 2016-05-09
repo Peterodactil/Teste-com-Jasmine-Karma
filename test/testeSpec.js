@@ -30,12 +30,15 @@ describe('BlocoTeste1', function() {
 });
 
 describe('TesteControllerSpec', function() {
+    // carrega o modulo 'app'
     beforeEach(module('app'));
+
     var ctrl;
+    // carrega o controller 'TesteController' do modulo 'app' e guarda em ctrl
     beforeEach(inject(function($controller) {
       ctrl = $controller('TesteController')
     }));
-
+    // testando a função 'Soma' do controller 'TesteController'
     it('Teste Soma', function() {
       var resultado = ctrl.Soma(1, 1);
       expect(resultado).toEqual(2);

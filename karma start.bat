@@ -1,2 +1,1 @@
 karma start
-pause
