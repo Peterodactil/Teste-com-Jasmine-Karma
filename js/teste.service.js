@@ -1,5 +1,16 @@
 var app = angular.module('app.teste');
-app.filter('testeService', service);
+app.controller('rotaController', rotaController);
 
-function service() {
+rotaController.$inject = ['$location'];
+
+function rotaController($location) {
+  var vm = this;
+
+  vm.acessarEquipamento = function() {
+    $location.path('/equipamento');
+  };
+
+  vm.acessarOS = function() {
+    $location.path('/os');
+  };
 };
