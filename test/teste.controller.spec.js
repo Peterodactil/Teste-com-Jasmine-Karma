@@ -4,11 +4,11 @@ describe('TesteControllerSpec', function() {
 
     var ctrl;
     var ctrlComValores;
-    
+
     // carrega o controller 'TesteController' do modulo 'app' e guarda em ctrl
     beforeEach(inject(function($controller) {
       ctrl = $controller('TesteController');
-
+      
       ctrlComValores = $controller('TesteController', {}, { primeiro: 2, segundo: 4 });
     }));
 
