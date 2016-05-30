@@ -44,3 +44,25 @@ describe('Testando serviço lista equipamentos', function () {
     expect(ctrl.equips).toEqual([{ id: 1, descricao: 'transmissor 001'}]);
   });
 });
+
+describe('Teste chamada método', function() {
+  var foo, bar = null;
+
+  beforeEach(function () {
+    foo = { setBar: function(value) {
+        bar = value;
+      }
+    };
+    spyOn(foo, 'setBar');
+    foo.setBar(123);
+    foo.setBar(345);
+  });
+
+  it('setBar foi executado', function() {
+    expect(foo.setBar).toHaveBeenCalled();
+  });
+
+  it('setBar foi executado duas vezes', function() {
+    expect(foo.setBar).toHaveBeenCalledTimes(2);
+  });
+});
