@@ -15,15 +15,16 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'bower_components/angular/angular.js',
-      'bower_components/angular-mocks/angular-mocks.js',
-      'js/teste.controller.js',
-      'js/teste.filter.js',
-      'js/teste.service.js',
+      // 'bower_components/angular/angular.js',
+      // 'bower_components/angular-mocks/angular-mocks.js',
+      // 'js/teste.controller.js',
+      // 'js/teste.filter.js',
+      // 'js/teste.service.js',
       'test/teste.spec.js',
-      'test/teste.controller.spec.js',
-      'test/teste.filter.spec.js',
-      'test/teste.service.spec.js'
+      'test/teste-setup.spec.js',
+      // 'test/teste.controller.spec.js',
+      // 'test/teste.filter.spec.js',
+      // 'test/teste.service.spec.js'
     ],
 
 
@@ -63,7 +64,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
 
     // Continuous Integration mode
